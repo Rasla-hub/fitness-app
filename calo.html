@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calories Burned Calculator</title>
+  <link rel="stylesheet" href="style/style3.css">
+</head>
+<style>
+
+body{
+    background-image: url(images/img9.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    
+
+    </style>
+
+<body>
+    <div class="calculator">
+        <h1>Calories Burned Calculator</h1>
+    <form id="calorieForm">
+      <label for="weight">Weight (kg) :</label>
+      <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+      <label for="duration">Duration (minutes) :</label>
+      <input type="number" id="duration" name="duration" placeholder="Enter duration of activity" required>
+
+      <label for="met">MET Value (Activity Intensity) :</label>
+      <input type="number" id="met" name="met" placeholder="Enter MET value" step="0.1" required>
+
+      <button type="button" onclick="calculateCalories()">Calculate</button>
+    </form>
+    <div id="result"></div>
+</div>
+  <script src="javascript/script3.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
