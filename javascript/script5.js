@@ -1,15 +1,15 @@
-document.getElementById("registerBtn").addEventListener("click", function(event) {
+document.getElementById("btn").addEventListener("click", function(event) {
     // Prevent form submission for validation
     event.preventDefault();
 
     // Get form elements
     const name = document.getElementById("name");
     const email = document.getElementById("email");
-    const password = document.getElementById("password");
-    const confirmPassword = document.getElementById("confirmPassword");
+    const pswd1 = document.getElementById("pswd1");
+    const pswd2 = document.getElementById("pswd2");
 
     // Check if all fields are filled
-    if (name.value == "" || email.value == "" || password.value == "" || confirmPassword.value == "") {
+    if (name.value == "" || email.value == "" || pswd1.value == "" || pswd2.value == "") {
         alert("Please fill in all the fields.");
         return;
     }
@@ -21,7 +21,7 @@ document.getElementById("registerBtn").addEventListener("click", function(event)
     }
 
     // Check if password and confirm password match
-    if (password.value !='' confirmPassword.value) {
+    if (pswd1.value !== pswd2.value) {
         alert("Passwords do not match.");
         return;
     }
@@ -29,8 +29,7 @@ document.getElementById("registerBtn").addEventListener("click", function(event)
     
     alert("registration successfull");
     
-    document.querySelector('form').submit();
-    
+    document.querySelector('form[name="myform2"]').submit();
     
 });
 

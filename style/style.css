@@ -100,7 +100,7 @@ h3{
     background-color: black;
  }
 
- .fooer{
+ .footer{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -165,8 +165,8 @@ h3{
   
   }
   .footerNav ul li a:hover{
-  
-      color: rgb(225, 117, 35);
+    background-color: rgb(218, 110, 21);;
+      color: rgb(19, 18, 17);
   
   }
   .footerBottom{
